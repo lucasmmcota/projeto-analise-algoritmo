@@ -10,7 +10,7 @@ int escolher_algoritmo(char *argv[]);
 /* Le e registra em '*distancia' as sub distancias entre os planetas. */
 void ler_sub_distancias(int *distancia, int n);
 
-/* Retorna o custo em percorrer a sub distancia dos planetas 'inicio' ao 'fim'. */
+/* Retorna o custo em percorrer a distancia de 'inicio' ao 'fim'. */
 int custo_sub_distancia(int distancia[], int inicio, int fim);
 
 /* Retorna o maior numero entre 'a' e 'b'. */

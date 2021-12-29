@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/*  Algoritmo guloso que retorna a maior sub distancia da solucao encontrada. */
+/* Algoritmo guloso que retorna a maior sub distancia da solucao encontrada. */
 int algoritmo_guloso(int distancia[], int n, int k);
 
 #endif
