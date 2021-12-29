@@ -14,7 +14,6 @@
 #include "programacao_dinamica.h"
 #include "programacao_dinamica.c"
 
-
 int main(int argc, char *argv[])
 {
     if (argc != 2)
