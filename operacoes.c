@@ -49,7 +49,7 @@ void ler_sub_distancias(int *distancia, int n)
         inicio -> Inicio da sub distancia
         fim -> Final da sub distancia
     Saida:
-        custo -> Custo da sub distancia do planeta 'inicio' ao planeta 'fim' */
+        custo -> Custo em percorrer a distancia de 'inicio' ao 'fim' */
 int custo_sub_distancia(int distancia[], int inicio, int fim)
 {
     int i = 0, custo = 0;

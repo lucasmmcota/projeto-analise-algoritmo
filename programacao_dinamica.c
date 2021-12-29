@@ -28,11 +28,13 @@ int programacao_dinamica(int distancia[], int n, int k, int atual)
 	}
 	else // Verifica se deve ir para o proximo planeta ou pular ele
 	{
-		int proximoPlaneta = maior(custo_sub_distancia(distancia, n, atual),
-								   programacao_dinamica(distancia, n - 1, k - 1, n));
+		int proximoPlaneta =
+			maior(custo_sub_distancia(distancia, n, atual),
+				  programacao_dinamica(distancia, n - 1, k - 1, n));
 
-		int pularProximoPlaneta = maior(custo_sub_distancia(distancia, n - 1, atual),
-										programacao_dinamica(distancia, n - 1, k, atual));
+		int pularProximoPlaneta =
+			maior(custo_sub_distancia(distancia, n - 1, atual),
+				  programacao_dinamica(distancia, n - 1, k, atual));
 
 		return menor(proximoPlaneta, pularProximoPlaneta);
 	}

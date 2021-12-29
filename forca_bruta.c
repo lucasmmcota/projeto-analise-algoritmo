@@ -45,11 +45,15 @@ int forca_bruta(int distancia[], int n, int k)
             {
                 if (j != atual)
                 {
-                    aux[j] = custo_sub_distancia(distancia, sub_distancia[j], sub_distancia[j + 1]);
+                    aux[j] = custo_sub_distancia(distancia,
+                                                 sub_distancia[j],
+                                                 sub_distancia[j + 1]);
                 }
                 else
                 {
-                    aux[j] = custo_sub_distancia(distancia, sub_distancia[j], n + 1);
+                    aux[j] = custo_sub_distancia(distancia,
+                                                 sub_distancia[j],
+                                                 n + 1);
                 }
 
                 if (aux[j] > sd_local)
