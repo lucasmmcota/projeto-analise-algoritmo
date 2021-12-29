@@ -25,9 +25,9 @@ int algoritmo_guloso(int distancia[], int n, int k)
 
     distancia_percorrida[n] = 1;
 
-    /*  Escolha gulosa: atribuir um peso ao planeta e sempre
-        passar pelos 'k' planetas de maior peso. O peso sera
-        a soma das arestas de entrada e saida do planeta. */
+    /*  Escolha gulosa: Passar pelos 'k' planetas de maior peso.
+        O peso do planeta e a soma da sub distancia anterior ao planeta
+        atual com a sub distancia do planeta atual ao proximo ponto. */
     for (i = 0; i < k; i++)
     {
         int j = 0, maior = -1, indice = -1;
