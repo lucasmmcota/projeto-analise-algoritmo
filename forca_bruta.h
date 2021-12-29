@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/* Algoritmo de forca bruta que retornar a maior aresta da solucao otima. */
+/* Algoritmo de forca bruta que retorna a maior sub distancia da solucao otima. */
 int forca_bruta(int distancia[], int n, int k);
 
 #endif

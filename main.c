@@ -24,13 +24,11 @@ int main(int argc, char *argv[])
         return 0;
     }
 
-    // verificar t, n e k
-
-    // int algoritmo = escolher_algoritmo(argv);
     int i, t, n, k, *distancia;
 
     scanf("%d", &t);
 
+    // verificar t, n e k
     // if (t < 0 || t > 100)
     // {
     //     printf("Numero de instancias invalido !\n");

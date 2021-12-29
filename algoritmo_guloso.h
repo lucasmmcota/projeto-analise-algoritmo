@@ -4,8 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/*  Algoritmo guloso para tentar encontrar a maior sub distancia
-    passando em 'k' planetas de forma otima. */
+/*  Algoritmo guloso que retorna a maior sub distancia da solucao encontrada. */
 int algoritmo_guloso(int distancia[], int n, int k);
 
 #endif
