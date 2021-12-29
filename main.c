@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 
 #include "operacoes.h"
 #include "operacoes.c"
@@ -24,28 +23,11 @@ int main(int argc, char *argv[])
     }
 
     int i, t, n, k, *distancia;
-
     scanf("%d", &t);
-
-    // verificar t, n e k
-    // if (t < 0 || t > 100)
-    // {
-    //     printf("Numero de instancias invalido !\n");
-    //     printf("Encerrando o programa...\n");
-    //     return 0;
-    // }
 
     for (i = 0; i < t; i++)
     {
         scanf("%d %d", &n, &k);
-        // while (n < 1 || n > 500 || k < 0 || k > 250 || k > n)
-        // {
-        //     printf("Numero de n e k invalido na instancia %d!\n", i + 1);
-        //     distancia = (int *)calloc(n + 1, sizeof(int));
-        //     le_distancias(distancia, n);
-        //     scanf("%d %d", &n, &k);
-        // }
-
         distancia = (int *)calloc(n + 1, sizeof(int));
         ler_sub_distancias(distancia, n);
 
